@@ -21,7 +21,7 @@ func main() {
 
 func processFile(filename string) {
 	fmt.Println("Processing file ", filename)
-	jsonData := make(map[string]interface{})
+	var jsonData interface{}
 
 	fileContent, err := os.ReadFile(filename)
 	if err != nil {
